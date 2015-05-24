@@ -1,6 +1,6 @@
 
-##################################
-#########Development Environment
+###############################################################################################
+#########Development Environment            ##################################################
 1. App Server: Glassfish 3.1.1 (Java EE 6)
 2. IDE: NetBeans 8.02
 3. Build Tool: Maven 3
@@ -24,9 +24,9 @@
 #######################################################################################################################################
 
 
-#########          Run Instructions  ##############################################################
+################     Run Instructions  ##############################################################
 
-1. Create two databases in the SQL (1. gcd  2. gcd_test) & run createTables.sql under setup_resources folder to create tables in both DB
+1. Create two databases in the SQL Server(1. gcd  2. gcd_test) & run createTables.sql under setup_resources folder to create tables in both DB
 
 2. Copy jtds-1.2.8.jar to {your glassfish root}\domains\{your domain}\lib\ext
 
@@ -72,11 +72,11 @@
 
 
 
-################################# Load Test Run Instruction
+################################# Load Test Run Instruction   #####################################
 
 1. Open SOAPUI, Load project files REST-gcd-soapui-project.xml & SOAP-gcd-soapui-project.xml under setup_resources folder( File >Import Projects)
 
-2. Run the load tests under Load Test nodes for REST & SOAP test cases
+2. Run the load tests (all requests) under Load Test nodes for REST & SOAP test cases
 
 3. Each load test uses 20 threads within 10 seconds to send requests to server
    E.G. during my test, 605 push integer requests were sent to server by 20 threads within 10 seconds, 
